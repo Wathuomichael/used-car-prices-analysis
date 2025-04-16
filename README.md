@@ -6,12 +6,15 @@ The aim of this analysis was to determine the factors that had the most effect o
 
 # Findings
 ![Selling Price Distribution](images/spdist.png)
+
 Majority of the cars’ selling price was below 10 lakh and the mean selling price was 4.7 lakh. There were however some observations that were above 30 lakh which indicated presence of outliers that could have an effect on the model fit.
 
 ![Selling price vs Fuel type](images/sp-v-fuel.png)
+
 The above plot shows relationship between selling price and fuel type. Diesel cars are generally more expensive than petrol cars. There are only 2 observations of CNG powered cars hence we cannot make accurate assessments on CNG fuel type.
 
 ![Selling price vs mileage](images/sp-v-km.png)
+
 Mileage(Kms_Driven) does not seem to have a significant impact on selling price according to the plot above. Transmission appears to have a small impact on selling price as automatic cars seem to be more pricey compared to their manual counterparts as also shown by the plot below.
 
 ![Selling price vs Transmission](images/sp-v-transmission.png)
