@@ -31,3 +31,9 @@ Mileage(Kms_Driven) does not seem to have a significant impact on selling price 
 | TransmissionAutomatic | -0.2228 | 0.017 * |
 | Owner | 0.04447 | 0.642 |
 
+This shows the various factors and how significant they are to selling price. The most significant variables are year of manufacture, present price(list price) and seller type with almost very small p values. Fuel type and Transmission were also significant with relatively low p values. Mileage and number of previous owners were not significant.
+
+### Predictions
+![Predicted selling price vs actual selling price](images/pred-v-actual.png)
+
+The model is accurate when predicting lower values of the selling price but gets more inaccurate as the selling price increases. The RMSE(Root Mean Squared Error) was 1.484 and the MAE(Mean Absolute Error) was 0.762 which shows the model was fairly accurate when predicting selling price.
