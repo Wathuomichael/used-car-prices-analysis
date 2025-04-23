@@ -5,7 +5,7 @@ The analysis was focused on determining what variables have a significant impact
 The aim of this analysis was to determine the factors that had the most effect on used car prices and also predict selling price of used cars given new data.
 
 # Findings
-![Selling Price Distribution](images/spdist.png)
+![Selling Price Distribution](images/sphist.png)
 
 Majority of the cars’ selling price was below 10 lakh and the mean selling price was 4.7 lakh. There were however some observations that were above 30 lakh which indicated presence of outliers that could have an effect on the model fit.
 
