@@ -16,9 +16,17 @@ prices$Fuel_Type <- sapply(prices$Fuel_Type, factor)
 prices$Seller_Type <- sapply(prices$Seller_Type, factor)
 prices$Transmission <- sapply(prices$Transmission, factor)
 
-ggplot(prices, aes(Selling_Price)) + geom_histogram(fill = '#01a1ab', alpha = 0.6) + theme_minimal() + labs(x = 'Selling Price(Lakh)')
+ggplot(prices, aes(Selling_Price)) + 
+  geom_histogram(fill = '#01a1ab', alpha = 0.6) + theme_bw() + 
+  labs(x = 'Selling Price(Lakh)', y = 'Count') +
+  ggtitle('Selling Price Histogram') +
+  theme(plot.title = element_text(hjust = 0.5))
 
-ggplot(prices, aes(Fuel_Type, Selling_Price)) + geom_boxplot() + theme_bw()
+ggplot(prices, aes(Fuel_Type, Selling_Price)) + 
+  geom_boxplot() + theme_bw() +
+  labs(x = 'Fuel Type', y = 'Selling Price') +
+  ggtitle('Selling Price against Fuel Type') +
+  theme(plot.title = element_text(hjust = 0.5))
 
 ggplot(prices, aes(Kms_Driven, Selling_Price)) + geom_point(aes(colour = Transmission)) + xlim(0, 2.5 + 10^5)
 
